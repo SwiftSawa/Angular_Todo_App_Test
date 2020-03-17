@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todoList';
+  dael:string = 'Full Dael';  // typescript is used ":string"
+  
+  constructor(){
+    console.log(123);
+    // this.dael="Gursewak";
+    this.changeName('Gursewak');
+  }
+
+  changeName(name:string):void{
+    this.dael= name;
+  }
 }
