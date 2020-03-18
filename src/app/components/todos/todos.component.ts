@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
 import { TodoService } from '../../services/todo.service';
-
 import { Todo } from '../../models/todo.model';
 
 @Component({
@@ -36,7 +34,7 @@ export class TodosComponent implements OnInit {
 
   addTodo(todo:Todo){
     this.todoService.addTodo(todo).subscribe(todo =>{
-      this.todos.push(todo);
+    this.todos.push(todo);
     })
   }
 

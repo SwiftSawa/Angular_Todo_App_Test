@@ -18,7 +18,7 @@ export class TodoItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+ 
   // set dynamic classes
   setClasses(){
     let classes ={
